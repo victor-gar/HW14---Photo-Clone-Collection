@@ -11,6 +11,12 @@
 		16BCF7F42987D88600FC51C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF7F32987D88600FC51C7 /* SceneDelegate.swift */; };
 		16BCF7F62987D88600FC51C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF7F52987D88600FC51C7 /* ViewController.swift */; };
 		16BCF7FB2987D88900FC51C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BCF7FA2987D88900FC51C7 /* Assets.xcassets */; };
+		16BCF8062987E35C00FC51C7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF8052987E35C00FC51C7 /* MainTabBarViewController.swift */; };
+		16BCF8082987E3EB00FC51C7 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF8072987E3EB00FC51C7 /* MainNavigationViewController.swift */; };
+		16BCF80A29880B7200FC51C7 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF80929880B7200FC51C7 /* LibraryViewController.swift */; };
+		16BCF80C29880B8B00FC51C7 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF80B29880B8B00FC51C7 /* ForYouViewController.swift */; };
+		16BCF80E29880C6500FC51C7 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF80D29880C6500FC51C7 /* AlbumsViewController.swift */; };
+		16BCF81029880C7200FC51C7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BCF80F29880C7200FC51C7 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		16BCF7F52987D88600FC51C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16BCF7FA2987D88900FC51C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BCF7FF2987D88900FC51C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BCF8052987E35C00FC51C7 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		16BCF8072987E3EB00FC51C7 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		16BCF80929880B7200FC51C7 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		16BCF80B29880B8B00FC51C7 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
+		16BCF80D29880C6500FC51C7 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		16BCF80F29880C7200FC51C7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 				16BCF7F52987D88600FC51C7 /* ViewController.swift */,
 				16BCF7FA2987D88900FC51C7 /* Assets.xcassets */,
 				16BCF7FF2987D88900FC51C7 /* Info.plist */,
+				16BCF8052987E35C00FC51C7 /* MainTabBarViewController.swift */,
+				16BCF8072987E3EB00FC51C7 /* MainNavigationViewController.swift */,
+				16BCF80D29880C6500FC51C7 /* AlbumsViewController.swift */,
+				16BCF80929880B7200FC51C7 /* LibraryViewController.swift */,
+				16BCF80B29880B8B00FC51C7 /* ForYouViewController.swift */,
+				16BCF80F29880C7200FC51C7 /* SearchViewController.swift */,
 			);
 			path = "Photo Clone Collection";
 			sourceTree = "<group>";
@@ -130,8 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BCF80E29880C6500FC51C7 /* AlbumsViewController.swift in Sources */,
+				16BCF8082987E3EB00FC51C7 /* MainNavigationViewController.swift in Sources */,
 				16BCF7F62987D88600FC51C7 /* ViewController.swift in Sources */,
+				16BCF81029880C7200FC51C7 /* SearchViewController.swift in Sources */,
 				16BCF7F22987D88600FC51C7 /* AppDelegate.swift in Sources */,
+				16BCF80C29880B8B00FC51C7 /* ForYouViewController.swift in Sources */,
+				16BCF8062987E35C00FC51C7 /* MainTabBarViewController.swift in Sources */,
+				16BCF80A29880B7200FC51C7 /* LibraryViewController.swift in Sources */,
 				16BCF7F42987D88600FC51C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

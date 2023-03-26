@@ -22,6 +22,7 @@ final class UtilitiesCell: UICollectionViewListCell {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Some text"
+        label.font = Constants.Fonts.utilitilesTitile
         label.textColor = .systemBlue
         return label
     }()
@@ -31,12 +32,13 @@ final class UtilitiesCell: UICollectionViewListCell {
         label.text = "0"
         label.textAlignment = .center
         label.textColor = .systemGray
+        label.font = Constants.Fonts.subtitle
         return label
     }()
     
     private lazy var divider: UIView = {
         let line = UIView()
-        line.backgroundColor = UIColor.black
+        line.backgroundColor = Constants.Colors.divider
         return line
     }()
     
@@ -56,7 +58,7 @@ final class UtilitiesCell: UICollectionViewListCell {
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.left.equalTo(icon.snp.right).offset(10 / 2)
+            make.left.equalTo(icon.snp.right).offset(Constants.Layout.paging / 2)
             make.right.equalToSuperview()
             make.height.centerY.equalTo(icon)
         }
@@ -79,6 +81,15 @@ final class UtilitiesCell: UICollectionViewListCell {
     
     // MARK: - Configure cell with recieved data
 
-
+    public func configure(with data: UtilitiesModel) {
+        accessories = [.disclosureIndicator()]
+        setupHierarchy()
+        setupLayout()
+        icon.image = UIImage(named: data.image)
+        titleLabel.text = data.title
+        itemsCountTitle.text = data.itemsCountTitle
+        if data.hasBottomDivider {
+            addBottomDivider()
+        }
+    }
 }
-

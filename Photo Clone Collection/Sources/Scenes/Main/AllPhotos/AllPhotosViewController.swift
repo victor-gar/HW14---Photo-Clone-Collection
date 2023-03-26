@@ -9,7 +9,7 @@ import UIKit
 
 
 
-class LibraryViewController: UIViewController {
+class AllPhotosViewController: UIViewController {
     
     // MARK: - UI
     static let screenSize = UIScreen.main.bounds
@@ -24,7 +24,7 @@ class LibraryViewController: UIViewController {
         
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.cellID)
+        collectionView.register(AllPhotosCell.self, forCellWithReuseIdentifier: AllPhotosCell.cellID)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsVerticalScrollIndicator = false
@@ -128,7 +128,7 @@ class LibraryViewController: UIViewController {
 }
 
 
-extension LibraryViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension AllPhotosViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -138,7 +138,7 @@ extension LibraryViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let imageURLStrings = results[indexPath.item].urls.thumb
         // let labelText = results[indexPath.item].created_at
-        let item = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.cellID, for: indexPath) as! AlbumCell
+        let item = collectionView.dequeueReusableCell(withReuseIdentifier: AllPhotosCell.cellID, for: indexPath) as! AllPhotosCell
                 
         if mySegmentedControl.selectedSegmentIndex == 0 {
             collectionView.minimumContentSizeCategory = .small
@@ -157,7 +157,7 @@ extension LibraryViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
 }
 
-extension LibraryViewController: UICollectionViewDelegateFlowLayout {
+extension AllPhotosViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         

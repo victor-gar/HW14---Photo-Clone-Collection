@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AlbumCell: UICollectionViewCell {
+final class AllPhotosCell: UICollectionViewCell {
     
     static var cellID = "album"
     

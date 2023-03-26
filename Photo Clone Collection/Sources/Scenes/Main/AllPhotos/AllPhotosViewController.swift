@@ -79,7 +79,7 @@ class AllPhotosViewController: UIViewController {
     // MARK: - Setups
     
     private func setupView() {
-        title = "Library"
+        title = "AllPhotos"
     }
     
     private func setupHierarchy() {

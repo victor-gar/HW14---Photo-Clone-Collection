@@ -16,6 +16,7 @@ class UtilitiesHeader: UICollectionReusableView {
     private lazy var topTitle: UILabel = {
         let label = UILabel()
         label.text = UtilitiesHeader.headerID
+        label.font = Constants.Fonts.subHeaderFont
         label.textAlignment = .left
         label.textColor = .black
         return label
@@ -23,7 +24,7 @@ class UtilitiesHeader: UICollectionReusableView {
     
     private lazy var divider: UIView = {
         let line = UIView()
-        line.backgroundColor = UIColor.black
+        line.backgroundColor = Constants.Colors.divider
         return line
     }()
     

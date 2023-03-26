@@ -8,12 +8,19 @@
 import UIKit
 import SnapKit
 
+import SnapKit
+import UIKit
+
+
 final class MainTabBarViewController: UITabBarController {
+    
     // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAppearance()
         setupTabBarControllers()
+        loadAlbumsData()
     }
     
     // MARK: - Setups
@@ -23,8 +30,8 @@ final class MainTabBarViewController: UITabBarController {
     }
     
     private func setupTabBarControllers() {
-        viewControllers = [controllerWithTabBarItem(LibraryViewController(),
-                                                    title: "Library",
+        viewControllers = [controllerWithTabBarItem(AllPhotosViewController(),
+                                                    title: "All Photos",
                                                     image: "photo.fill.on.rectangle.fill"),
                            controllerWithTabBarItem(ForYouViewController(),
                                                     title: "For You",
@@ -35,6 +42,12 @@ final class MainTabBarViewController: UITabBarController {
                            controllerWithTabBarItem(SearchViewController(),
                                                     title: "Search",
                                                     image: "magnifyingglass")]
+        
+        selectedViewController = viewControllers?[2]
+    }
+    
+    private func loadAlbumsData() {
+        PhotosDataManager.fetchImages()
     }
     
     private func controllerWithTabBarItem(_ controller: UIViewController, title: String, image: String) -> UINavigationController {
